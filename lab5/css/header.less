@@ -1,0 +1,40 @@
+// main: style.less
+
+.header{
+    background: @black;
+    border-bottom: 1px solid white;
+    height: 70px;
+}
+.header.fixed{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+.header_inner{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.block_logo{
+    cursor: pointer;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+}
+.nav ul li{
+    list-style: none;
+    font-size: 16px;
+    color: white;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: .15s linear;
+    font-weight: 600;
+    &:hover{
+        color: @yellow;
+    }
+}
